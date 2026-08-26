@@ -3,23 +3,23 @@
 ## Structure
 
 ```md
-# {Context Name}
+# {上下文名称}
 
-{One or two sentence description of what this context is and why it exists.}
+{一两句话描述这个上下文是什么、为什么存在。}
 
-## Language
+## 术语
 
-**Order**:
-{A one or two sentence description of the term}
-_Avoid_: Purchase, transaction
+**Order(订单)**:
+{一两句话描述该术语}
+_避免使用_: Purchase, transaction
 
-**Invoice**:
-A request for payment sent to a customer after delivery.
-_Avoid_: Bill, payment request
+**Invoice(发票)**:
+交付后向客户发出的付款请求。
+_避免使用_: Bill, payment request
 
-**Customer**:
-A person or organization that places orders.
-_Avoid_: Client, buyer, account
+**Customer(客户)**:
+下单的个人或组织。
+_避免使用_: Client, buyer, account
 ```
 
 ## Rules
@@ -36,19 +36,19 @@ _Avoid_: Client, buyer, account
 **Multiple contexts:** A `CONTEXT-MAP.md` at the repo root lists the contexts, where they live, and how they relate to each other:
 
 ```md
-# Context Map
+# 上下文地图
 
-## Contexts
+## 上下文
 
-- [Ordering](./src/ordering/CONTEXT.md): receives and tracks customer orders
-- [Billing](./src/billing/CONTEXT.md): generates invoices and processes payments
-- [Fulfillment](./src/fulfillment/CONTEXT.md): manages warehouse picking and shipping
+- [Ordering](./src/ordering/CONTEXT.md): 接收并跟踪客户订单
+- [Billing](./src/billing/CONTEXT.md): 生成发票并处理付款
+- [Fulfillment](./src/fulfillment/CONTEXT.md): 管理仓库拣货和发货
 
-## Relationships
+## 关系
 
-- **Ordering → Fulfillment**: Ordering emits `OrderPlaced` events; Fulfillment consumes them to start picking
-- **Fulfillment → Billing**: Fulfillment emits `ShipmentDispatched` events; Billing consumes them to generate invoices
-- **Ordering ↔ Billing**: Shared types for `CustomerId` and `Money`
+- **Ordering → Fulfillment**: Ordering 发出 `OrderPlaced` 事件;Fulfillment 消费它启动拣货
+- **Fulfillment → Billing**: Fulfillment 发出 `ShipmentDispatched` 事件;Billing 消费它生成发票
+- **Ordering ↔ Billing**: `CustomerId` 和 `Money` 的共享类型
 ```
 
 The skill infers which structure applies:

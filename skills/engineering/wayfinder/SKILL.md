@@ -29,27 +29,27 @@ The map is an **index**, not a store. It lists the decisions made and points at 
 The whole map at low resolution, loaded once per session. Open tickets are **not** listed: they are open child issues, found by query.
 
 ```markdown
-## Destination
+## 目标
 
-<what reaching the end of this map looks like: the spec, decision, or change this effort is finding its way to. One or two lines; every session orients to it before choosing a ticket.>
+<走到这张地图的尽头是什么样子: 这项努力要通往的规格、决策或变更。一到两行;每个会话在选择工单前先以它定位。>
 
-## Notes
+## 说明
 
-<domain; skills every session should consult; standing preferences for this effort>
+<领域;每个会话都应查阅的技能;本项工作的长期偏好>
 
-## Decisions so far
+## 已确定的决策
 
-<!-- the index: one line per closed ticket, enough to judge relevance, then zoom the link for the detail the ticket holds -->
+<!-- 索引: 每个已关闭的工单一行,足以判断相关性,再看链接里工单持有的细节 -->
 
-- [<closed ticket title>](link): <one-line gist of the answer>
+- [<已关闭工单的标题>](链接): <答案的一行要点>
 
-## Not yet specified
+## 尚未明确
 
-<!-- see "Fog of war": in-scope fog you can't ticket yet; graduates as the frontier advances -->
+<!-- 见 "Fog of war": 在范围内但还无法立项的雾;随 frontier 推进而逐步清晰 -->
 
-## Out of scope
+## 范围外
 
-<!-- see "Out of scope": work ruled beyond the destination; closed, never graduates -->
+<!-- 见 "Out of scope": 被判定超出目标的工作;关闭后永不回归 -->
 ```
 
 ### Tickets
@@ -57,9 +57,9 @@ The whole map at low resolution, loaded once per session. Open tickets are **not
 Each ticket is a **child issue** of the map; the tracker's issue id is its identity. Its body is the question, sized to one 100K token agent session:
 
 ```markdown
-## Question
+## 问题
 
-<the decision or investigation this ticket resolves>
+<这张工单要解决的决策或调查>
 ```
 
 Each ticket carries a `wayfinder:<type>` label, one of `research`, `prototype`, `grilling`, `task` (see [Ticket Types](#ticket-types)).

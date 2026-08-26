@@ -41,30 +41,30 @@ State what is out of scope. This prevents the agent from gold-plating or making 
 ```markdown
 ## Agent Brief
 
-**Category:** bug / enhancement
-**Summary:** one-line description of what needs to happen
+**类别:** bug / enhancement
+**摘要:** 一句话描述需要完成什么
 
-**Current behavior:**
-Describe what happens now. For bugs, this is the broken behavior.
-For enhancements, this is the status quo the feature builds on.
+**当前行为:**
+描述现在发生的情况。对 bug,这里是出问题的行为;
+对 enhancement,这里是功能所基于的现状。
 
-**Desired behavior:**
-Describe what should happen after the agent's work is complete.
-Be specific about edge cases and error conditions.
+**期望行为:**
+描述 agent 的工作完成后应当发生什么。
+对边界情况和错误条件要具体。
 
-**Key interfaces:**
-- `TypeName`: what needs to change and why
-- `functionName()` return type: what it currently returns vs what it should return
-- Config shape: any new configuration options needed
+**关键接口:**
+- `TypeName`: 需要改变什么以及为什么
+- `functionName()` 返回类型: 现在返回什么,应当返回什么
+- 配置形状: 需要新增的配置项
 
-**Acceptance criteria:**
-- [ ] Specific, testable criterion 1
-- [ ] Specific, testable criterion 2
-- [ ] Specific, testable criterion 3
+**验收标准:**
+- [ ] 具体、可测试的标准 1
+- [ ] 具体、可测试的标准 2
+- [ ] 具体、可测试的标准 3
 
-**Out of scope:**
-- Thing that should NOT be changed or addressed in this issue
-- Adjacent feature that might seem related but is separate
+**范围外:**
+- 本 issue 中不应改动或处理的内容
+- 看似相关但实际独立的相邻功能
 ```
 
 ## Examples

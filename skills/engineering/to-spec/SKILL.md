@@ -20,56 +20,56 @@ Check with the user that these seams match their expectations.
 
 <spec-template>
 
-## Problem Statement
+## 问题陈述
 
-The problem that the user is facing, from the user's perspective.
+用户正面临的问题,从用户视角描述。
 
-## Solution
+## 解决方案
 
-The solution to the problem, from the user's perspective.
+问题的解决方案,从用户视角描述。
 
-## User Stories
+## 用户故事
 
-A LONG, numbered list of user stories. Each user story should be in the format of:
+一份很长、带编号的用户故事列表。每条用户故事的格式为:
 
-1. As an <actor>, I want a <feature>, so that <benefit>
+1. 作为<角色>,我希望<功能>,以便<价值>
 
 <user-story-example>
-1. As a mobile bank customer, I want to see balance on my accounts, so that I can make better informed decisions about my spending
+1. 作为手机银行客户,我希望看到账户余额,以便更好地决定自己的消费
 </user-story-example>
 
-This list of user stories should be extremely extensive and cover all aspects of the feature.
+这份用户故事列表应当极其详尽,覆盖功能的各个方面。
 
-## Implementation Decisions
+## 实现决策
 
-A list of implementation decisions that were made. This can include:
+已确定的实现决策列表,可以包括:
 
-- The modules that will be built/modified
-- The interfaces of those modules that will be modified
-- Technical clarifications from the developer
-- Architectural decisions
-- Schema changes
-- API contracts
-- Specific interactions
+- 将要构建/修改的模块
+- 这些模块中将被修改的接口
+- 来自开发者的技术澄清
+- 架构决策
+- Schema 变更
+- API 契约
+- 具体的交互方式
 
-Do NOT include specific file paths or code snippets. They may end up being outdated very quickly.
+不要包含具体的文件路径或代码片段,它们很快就会过时。
 
-Exception: if a prototype produced a snippet that encodes a decision more precisely than prose can (state machine, reducer, schema, type shape), inline it within the relevant decision and note briefly that it came from a prototype. Trim to the decision-rich parts, not a working demo, just the important bits.
+例外:如果原型产出过某个比文字更精确地编码了决策的片段(状态机、reducer、schema、类型形状),将其内联到相关决策中,并简要注明来自原型。裁剪到决策密集的部分,不是可运行的演示,只要关键的 bits。
 
-## Testing Decisions
+## 测试决策
 
-A list of testing decisions that were made. Include:
+已确定的测试决策列表,包括:
 
-- A description of what makes a good test (only test external behavior, not implementation details)
-- Which modules will be tested
-- Prior art for the tests (i.e. similar types of tests in the codebase)
+- 什么才是好测试的描述(只测外部行为,不测实现细节)
+- 哪些模块将被测试
+- 测试的先例(即代码库中类似类型的测试)
 
-## Out of Scope
+## 范围外
 
-A description of the things that are out of scope for this spec.
+本规格明确排除在范围之外的内容。
 
-## Further Notes
+## 补充说明
 
-Any further notes about the feature.
+关于该功能的任何其他说明。
 
 </spec-template>

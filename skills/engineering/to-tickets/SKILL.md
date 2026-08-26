@@ -68,37 +68,37 @@ Do NOT close or modify any parent issue.
 
 <local-ticket-template>
 
-# <NN>: <Ticket title>
+# <NN>: <工单标题>
 
-**What to build:** the end-to-end behaviour this ticket makes work, from the user's perspective, not a layer-by-layer implementation list.
+**要构建的内容:** 本工单使之可用的端到端行为,从用户视角描述,不是逐层的实现清单。
 
-**Blocked by:** the numbers/titles of the tickets that gate this one, or "None (can start immediately)".
+**Blocked by:** 阻塞本工单的工单编号/标题,或 "None (can start immediately)"。
 
 **Status:** ready-for-agent
 
-- [ ] Acceptance criterion 1
-- [ ] Acceptance criterion 2
+- [ ] 验收标准 1
+- [ ] 验收标准 2
 
 </local-ticket-template>
 
 <issue-template>
 
-## Parent
+## 父工单
 
-A reference to the parent issue on the tracker (if the source was an existing issue, otherwise omit this section).
+对 tracker 上父 issue 的引用(如果来源是一个已有 issue,否则省略本节)。
 
-## What to build
+## 要构建的内容
 
-The end-to-end behaviour this ticket makes work, from the user's perspective, not layer-by-layer implementation.
+本工单使之可用的端到端行为,从用户视角描述,不是逐层的实现。
 
-## Acceptance criteria
+## 验收标准
 
-- [ ] Criterion 1
-- [ ] Criterion 2
+- [ ] 标准 1
+- [ ] 标准 2
 
 ## Blocked by
 
-- A reference to each blocking ticket, or "None (can start immediately)".
+- 对每个阻塞工单的引用,或 "None (can start immediately)"。
 
 </issue-template>
 
