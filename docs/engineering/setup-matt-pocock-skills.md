@@ -43,7 +43,7 @@ The tracker options:
 | --- | --- | --- |
 | **GitHub** | the repo's GitHub Issues | the `gh` CLI |
 | **GitLab** | the repo's GitLab Issues | the `glab` CLI |
-| **Multica** | issues in a Multica workspace | the `multica` CLI, plus its profile, workspace, and optionally project |
+| **Multica** | issues in a Multica workspace on our self-hosted instance | the `multica` CLI pointed at `https://ee-multica.oppoer.me/` (profile `oppo`), plus workspace and optionally project |
 | **Local markdown** | files under `.scratch/<feature>/` in this repo | nothing: no remote at all |
 | **Other** | wherever you say | one paragraph from you describing the workflow |
 

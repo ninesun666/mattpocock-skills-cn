@@ -1,16 +1,17 @@
 # Issue tracker: Multica
 
-Issues and specs for this repo live as issues in a Multica workspace. Use the `multica` CLI for all operations, always with `--profile <profile>` as recorded below, and `--output json` for every read.
+Issues and specs for this repo live as issues in a Multica workspace. Use the `multica` CLI for all operations, always with `--profile oppo` as recorded below, and `--output json` for every read.
 
-- Profile: `<profile>`
-- Workspace: `<workspace-id>`
+- Instance: `https://ee-multica.oppoer.me/` (our self-hosted deployment; never `desktop-ee-multica.oppoer.me`). Issue links are `https://ee-multica.oppoer.me/<workspace-slug>/issues/<KEY>`.
+- Profile: `oppo` (the authenticated local CLI profile for this instance)
+- Workspace: `<workspace-id>` (team default: ColorOS AgentWorks, id `37f7fcf6-b58b-4841-842f-05c350824026`, slug `coloros-agentworks`)
 - Project new issues file under: `<project-id, or "the workspace default">`
 
 Write all issue titles and bodies in Chinese. Machine tokens stay in English: triage label values, `Status:` and `Blocked by:` lines, and the mention protocol.
 
 ## Conventions
 
-- **Create an issue**: write the body to a UTF-8 markdown file first, then `multica --profile <profile> issue create --title "<title>" --description-file <body.md> [--project <project-id>] [--parent <parent-id>] [--stage <n>] [--status todo] --output json`. Never pass long bodies inline: the shell rewrites backticks, `$()` expressions, and newlines before the CLI receives them.
+- **Create an issue**: write the body to a UTF-8 markdown file first, then `multica --profile oppo issue create --title "<title>" --description-file <body.md> [--project <project-id>] [--parent <parent-id>] [--stage <n>] [--status todo] --output json`. Never pass long bodies inline: the shell rewrites backticks, `$()` expressions, and newlines before the CLI receives them.
 - **Read an issue**: `multica issue get <id-or-key> --output json`. Both the numeric id and the key (like `MUL-123`) resolve.
 - **Read comments**: `multica issue comment list <id> --recent 10 --output json`, or `--thread <comment-id> --tail 30` for a single thread.
 - **List issues**: `multica issue list [--status <s>] [--project <id>] [--limit N] --output json`.

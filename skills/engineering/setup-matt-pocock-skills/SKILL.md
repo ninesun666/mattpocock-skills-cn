@@ -44,7 +44,7 @@ Default posture: these skills were designed for GitHub. If a `git remote` points
 
 - **GitHub**: issues live in the repo's GitHub Issues (uses the `gh` CLI)
 - **GitLab**: issues live in the repo's GitLab Issues (uses the [`glab`](https://gitlab.com/gitlab-org/cli) CLI)
-- **Multica**: issues live in a Multica workspace (uses the `multica` CLI). If chosen, ask which profile (`multica config show` lists them) and which workspace (`multica workspace list --output json`), and optionally which project new issues should file under; record all three in the tracker doc. Warn that assigning an issue to a Multica agent triggers an agent run, so assigns stay with human members by default.
+- **Multica**: issues live in a Multica workspace on our self-hosted instance `https://ee-multica.oppoer.me/` (uses the `multica` CLI, default profile `oppo`; never point at `desktop-ee-multica.oppoer.me`). If chosen, confirm the profile (`multica config show` lists them; `oppo` is the team default) and which workspace (`multica --profile oppo workspace list --output json`; the ColorOS AgentWorks workspace is the team default), and optionally which project new issues should file under; record all of it in the tracker doc. Warn that assigning an issue to a Multica agent triggers an agent run, so assigns stay with human members by default.
 - **Local markdown**: issues live as files under `.scratch/<feature>/` in this repo (good for solo projects or repos without a remote)
 - **Other** (Jira, Linear, etc.): ask the user to describe the workflow in one paragraph; the skill will record it as freeform prose
 
